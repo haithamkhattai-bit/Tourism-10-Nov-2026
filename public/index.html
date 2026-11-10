@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f7f5f0" />
+    <title>Dubai, Your Way | Tourism Assistant</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main class="app-shell">
+      <aside class="sidebar" aria-label="About this assistant">
+        <a class="brand" href="./" aria-label="Dubai, Your Way home">
+          <span class="brand-mark" aria-hidden="true">د</span>
+          <span>Dubai, <em>Your Way</em></span>
+        </a>
+        <div class="sidebar-rule"></div>
+        <div class="side-note">
+          <span class="eyebrow">YOUR LOCAL GUIDE</span>
+          <h1>A city of<br />many worlds.</h1>
+          <p>From old creekside lanes to sky-high views, find the Dubai that feels like yours.</p>
+        </div>
+        <div class="side-footer">
+          <span class="sun-icon" aria-hidden="true">☼</span>
+          <span>Made for curious travellers</span>
+        </div>
+      </aside>
+
+      <section class="chat-panel" aria-label="Dubai tourism chat">
+        <header class="topbar">
+          <div class="guide-status"><span class="status-dot"></span> DUBAI TRAVEL GUIDE</div>
+          <button class="reset-button" id="reset-chat" type="button" aria-label="Start a new chat">
+            <span aria-hidden="true">↻</span> New chat
+          </button>
+        </header>
+
+        <div class="conversation" id="conversation" aria-live="polite">
+          <div class="welcome" id="welcome">
+            <span class="welcome-kicker">MARHABA <span aria-hidden="true">✳</span> WELCOME</span>
+            <h2>What would you<br />love to discover?</h2>
+            <p>Tell me what you're into, and let's make your Dubai trip yours.</p>
+            <div class="suggestions" aria-label="Try asking">
+              <button class="suggestion" type="button" data-prompt="Plan a relaxed 3-day Dubai itinerary with a mix of culture, food, and beaches.">
+                <span class="suggestion-icon">✳</span> A 3-day Dubai itinerary <span class="arrow">↗</span>
+              </button>
+              <button class="suggestion" type="button" data-prompt="What are some great places to discover Dubai's local culture and history?">
+                <span class="suggestion-icon">⌂</span> Culture &amp; hidden gems <span class="arrow">↗</span>
+              </button>
+              <button class="suggestion" type="button" data-prompt="How do I get around Dubai, and which transport options are best for visitors?">
+                <span class="suggestion-icon">⇢</span> Getting around Dubai <span class="arrow">↗</span>
+              </button>
+            </div>
+          </div>
+          <div class="messages" id="messages"></div>
+        </div>
+
+        <form class="composer" id="chat-form">
+          <label class="sr-only" for="message-input">Ask your Dubai travel guide</label>
+          <textarea
+            id="message-input"
+            name="message"
+            rows="1"
+            maxlength="4000"
+            placeholder="Ask me anything about Dubai..."
+            required
+          ></textarea>
+          <div class="composer-bottom">
+            <span class="composer-hint">A little local knowledge goes a long way.</span>
+            <button class="send-button" id="send-button" type="submit" aria-label="Send message">
+              <span aria-hidden="true">↑</span>
+            </button>
+          </div>
+        </form>
+        <p class="disclaimer">Travel details can change. Please verify time-sensitive information with official sources.</p>
+      </section>
+    </main>
+  </body>
+</html>

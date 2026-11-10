@@ -1,0 +1,9 @@
+{
+  "name": "dubai-tourism-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local Dubai tourism assistant powered by Azure OpenAI",
+  "scripts": {
+    "start": "node server.mjs"
+  }
+}
