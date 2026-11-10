@@ -4,6 +4,7 @@
   "private": true,
   "description": "A local Dubai tourism assistant powered by Azure OpenAI",
   "scripts": {
-    "start": "node server.mjs"
+    "start": "node server.mjs",
+    "test": "node --test"
   }
 }
